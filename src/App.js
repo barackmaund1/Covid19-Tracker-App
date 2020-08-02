@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.css';
+import Cards from './components/Cards/Cards'
+import Charts from './components/Charts/Charts'
+import CountryPicker from './components/CountryPicker/CountryPicker'
+// import { Cards,Charts,CountryPicker} from './components'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>App</h1>
-      </header>
+    <div className="container">
+      <Cards/>
+      <CountryPicker/>
+      <Charts/>
     </div>
   );
 }
