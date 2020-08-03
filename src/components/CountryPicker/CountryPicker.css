@@ -2,14 +2,16 @@
 margin:5% !important;
 width: 30%;
 }
-
+.app__option{
+    width:50% ;
+}
 @media(max-width:770px){
     .countryPicker__formControl{
         margin-top:5% !important;
         margin-left:5% !important;
         margin-bottom:5% !important;
         margin-right:30% !important ;
-        width: 35%;
+        width: 50%;
         }
         
 }
