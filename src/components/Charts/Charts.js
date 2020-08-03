@@ -12,7 +12,7 @@ useEffect(() =>{
     
 
     fetchAPI();
-},[dailyData])
+},[])
 
 const lineChart =(
   dailyData.length?(<Line
@@ -34,7 +34,7 @@ const lineChart =(
   />) : null
 
 );
-
+ console.log(deaths)
 const barchar=(
     confirmed
     ?(
@@ -48,7 +48,7 @@ const barchar=(
                     'rgb(0,255,0,0.5)',
                     'rgb(255,0,0,0.5)',
                 ],
-                data:[confirmed,recovered,deaths]
+                data:[ confirmed.value,recovered.value ]
             }]
           }}
           options={{

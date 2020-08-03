@@ -48,13 +48,12 @@ const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
                     <Typography variant='h5'>
                     <CountUp
                         start={0}
-                        end={deaths}
                         duration={2.5}
                         separator=','
                     />
                     </Typography>
                     <Typography color='textSecondary' >{new Date(lastUpdate).toDateString()}</Typography>
-                    <Typography variant='body2'>Number of death caused by COVID-1<span>😭 </span></Typography>
+                    <Typography variant='body2'>Number of death caused by COVID-19<span>😭 </span></Typography>
                    </CardContent>
                 </Grid>
            </Grid> 
