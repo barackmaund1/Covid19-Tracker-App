@@ -15,7 +15,7 @@ const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
                 
                 <Grid item component={ Card } xs={12} md={3} className='app__maundu card' >
                       <CardContent>
-                        <Typography color='textSecondary'  gutterBottom>Coutesy Of</Typography>
+                        <Typography color='textSecondary'  gutterBottom>Courtesy of</Typography>
                         <Typography variant='h5'>
                           Maundus' Family at large 👪 
                         </Typography>
