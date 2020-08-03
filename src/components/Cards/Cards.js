@@ -12,7 +12,8 @@ const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
     return (
         <div className='app__card'>
            <Grid container spacing={3} justify='center'>
-                <Grid item component={ Card } xs={12} md={3} className='app__infected' >
+                
+                <Grid item component={ Card } xs={12} md={3} className='app__infected card' >
                       <CardContent>
                         <Typography color='textSecondary'  gutterBottom>Infected</Typography>
                         <Typography variant='h5'>
@@ -27,7 +28,7 @@ const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
                         <Typography variant='body2'>Number of active cases of COVID-19<span>😢</span></Typography>
                         </CardContent>
                 </Grid>
-                <Grid item component={ Card } xs={12} md={3} className='app__recovered' >
+                <Grid item component={ Card } xs={12} md={3} className='app__recovered card' >
                     <CardContent>
                     <Typography color='textSecondary'  gutterBottom>Recovered</Typography>
                     <Typography variant='h5'>
@@ -42,7 +43,7 @@ const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
                     <Typography variant='body2'>Number of recoveries from COVID-19</Typography>
                     </CardContent>
                  </Grid>
-                 <Grid item component={ Card } xs={12} md={3} className='app__deaths' >
+                 <Grid item component={ Card } xs={12} md={3} className='app__deaths card' >
                 <CardContent>
                     <Typography color='textSecondary'  gutterBottom>Deaths</Typography>
                     <Typography variant='h5'>

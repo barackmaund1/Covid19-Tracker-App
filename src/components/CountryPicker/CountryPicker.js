@@ -11,13 +11,13 @@ const CountryPicker = ({ handleCountryChange }) => {
            setFetchedCountries(await fetchCountries());
        }
        fetchAPI();
-    },[setFetchedCountries])
+    },[setFetchedCountries]);
 
-    console.log(fetchedCountries)
+    
     return (
         <FormControl className='countryPicker__formControl'>
           <NativeSelect defaultValue='' onChange={(e) =>handleCountryChange(e.target.value)}> 
-            <option value='global'>Global</option>
+            <option  value=''>Global</option>
             {fetchedCountries.map((country,i) => <option key={i} value={country}>{country}</option>)}
           </NativeSelect>
         </FormControl>

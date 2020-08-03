@@ -4,3 +4,8 @@
     width: 85%;
     margin-top:auto;
 }
+@media(max-width:770px){
+    .chart__container{
+        width:100% ;
+    }
+}
