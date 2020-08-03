@@ -33,7 +33,7 @@ class App extends React.Component{
      <Cards data={data}/>
      <CountryPicker handleCountryChange={this.handleCountryChange}/>
      <Charts data={data} country={country}/>
-     <footer className='app_footer'>Copyright &copy; 2017 All Rights Reserved by <strong>barack maundu 👍  </strong></footer>
+     <footer className='app_footer'>Copyright &copy; 2020 All Rights Reserved by <strong>barack maundu 👍  </strong></footer>
      </div>
    )
  }
