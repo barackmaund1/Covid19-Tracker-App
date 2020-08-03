@@ -1,9 +1,9 @@
 import React,{useEffect,useState} from 'react';
 import { fetchDailyData} from '../../api';
-import {Line} from 'react-chartjs-2'
+import {Line,Bar} from 'react-chartjs-2'
 import './Charts.css'
 
-const Charts = () => {
+const Charts = ({data: { confirmed,deaths,recovered },country}) => {
     const [dailyData,setDailyData] =useState([]);
 useEffect(() =>{
     const fetchAPI = async () =>{
@@ -34,10 +34,35 @@ const lineChart =(
   />) : null
 
 );
+
+const barchar=(
+    confirmed
+    ?(
+        <Bar
+          data={{
+            labels:['Infected','Recovered','Deaths'],
+            datasets:[{
+                labels:'People',
+                backgroundColor:[
+                    'rgb(0,0,255,0.5)',
+                    'rgb(0,255,0,0.5)',
+                    'rgb(255,0,0,0.5)',
+                ],
+                data:[confirmed,recovered,deaths]
+            }]
+          }}
+          options={{
+              legend:{display:false},
+              title:{display:true,text:`current state in ${country}` }
+          }}
+        />
+    ) :null
+)
+
     return (
         <div className='chart__container'>
-          
-          {lineChart}
+          {country ? barchar : lineChart}
+         
         </div>
     )
 }
