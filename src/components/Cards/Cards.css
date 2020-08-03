@@ -1,6 +1,12 @@
-
+.card{
+    margin-top:2% !important ;
+}
 .app__infected{
     border-bottom: 10px solid rgb(0,0,255,0.5);
+    margin-right: 2% !important;
+}
+.app__maundu{
+    border-bottom: 10px solid rgba(138, 135, 1, 0.5);
     margin-right: 2% !important;
 }
 .app__recovered{

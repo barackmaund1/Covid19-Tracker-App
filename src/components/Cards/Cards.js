@@ -13,20 +13,30 @@ const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
         <div className='app__card'>
            <Grid container spacing={3} justify='center'>
                 
-                <Grid item component={ Card } xs={12} md={3} className='app__infected card' >
+                <Grid item component={ Card } xs={12} md={3} className='app__maundu card' >
                       <CardContent>
-                        <Typography color='textSecondary'  gutterBottom>Infected</Typography>
+                        <Typography color='textSecondary'  gutterBottom>Coutesy Of</Typography>
                         <Typography variant='h5'>
-                          <CountUp
-                            start={0}
-                            end={confirmed.value}
-                            duration={2.5}
-                            separator=','
-                          />
+                          Maundus' Family at large 👪 
                         </Typography>
                         <Typography color='textSecondary' >{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant='body2'>Number of active cases of COVID-19<span>😢</span></Typography>
+                        <Typography variant='body2'>We spread awareness of COVID-19.Its real keep social distance<span>⚱  </span></Typography>
                         </CardContent>
+                </Grid>
+                <Grid item component={ Card } xs={12} md={3} className='app__infected card' >
+                    <CardContent>
+                      <Typography color='textSecondary'  gutterBottom>Infected</Typography>
+                      <Typography variant='h5'>
+                        <CountUp
+                          start={0}
+                          end={confirmed.value}
+                          duration={2.5}
+                          separator=','
+                        />
+                      </Typography>
+                      <Typography color='textSecondary' >{new Date(lastUpdate).toDateString()}</Typography>
+                      <Typography variant='body2'>Number of active cases of COVID-19<span>😢</span></Typography>
+                      </CardContent>
                 </Grid>
                 <Grid item component={ Card } xs={12} md={3} className='app__recovered card' >
                     <CardContent>
