@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Cards from './components/Cards/Cards'
 import Charts from './components/Charts/Charts'
@@ -11,9 +11,9 @@ class App extends React.Component{
     data:{},
   }
   async componentDidMount(){
-    const data = await fetchData();
-
-    this.setState({ data:fetchData });
+    const fetchedData = await fetchData();
+    console.log(fetchedData)
+    this.setState({ data:fetchedData });
   }
  render(){
   const { data }=this.state;

@@ -1,0 +1,16 @@
+.container{
+    margin: 50px 0;
+}
+
+.app__infected{
+    border-bottom: 10px solid rgb(0,0,255,0.5);
+    margin-right: 2% !important;
+}
+.app__recovered{
+    border-bottom: 10px solid rgb(0,255,0,0.5);
+    margin-right: 2% !important;
+}
+.app__deaths{
+    border-bottom: 10px solid rgb(255,0,0,0.5);
+    margin-right: 2% !important;
+}
