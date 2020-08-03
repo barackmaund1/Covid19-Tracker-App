@@ -5,8 +5,7 @@ import CountUp from 'react-countup';
 
 
 const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
-    console.log(deaths)
-    console.log(confirmed)
+    
     if (!confirmed) {
         return 'loading...';
     }
@@ -49,7 +48,7 @@ const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
                     <Typography variant='h5'>
                     <CountUp
                         start={0}
-                       
+                        end={deaths}
                         duration={2.5}
                         separator=','
                     />
