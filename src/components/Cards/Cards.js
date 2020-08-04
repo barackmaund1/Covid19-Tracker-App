@@ -12,17 +12,7 @@ const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
     return (
         <div className='app__card'>
            <Grid container spacing={3} justify='center'>
-                
-                <Grid item component={ Card } xs={12} md={3} className='app__maundu card' >
-                      <CardContent>
-                        <Typography color='textSecondary'  gutterBottom>Courtesy of</Typography>
-                        <Typography variant='h5'>
-                          Maundus' Family at large 👪 
-                        </Typography>
-                        <Typography color='textSecondary' >{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant='body2'>We spread awareness of COVID-19.Its real keep social distance<span>⚱  </span></Typography>
-                        </CardContent>
-                </Grid>
+ 
                 <Grid item component={ Card } xs={12} md={3} className='app__infected card' >
                     <CardContent>
                       <Typography color='textSecondary'  gutterBottom>Infected</Typography>
@@ -64,7 +54,7 @@ const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
                     />
                     </Typography>
                     <Typography color='textSecondary' >{new Date(lastUpdate).toDateString()}</Typography>
-                    <Typography variant='body2'>Number of death caused by COVID-19<span>😭 </span></Typography>
+                    <Typography variant='body2'>Number of deaths caused by COVID-19<span>😭 </span></Typography>
                    </CardContent>
                 </Grid>
            </Grid> 
