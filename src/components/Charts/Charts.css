@@ -6,7 +6,8 @@
 }
 @media(max-width:770px){
     .chart__container{
-        width:120% ;
+        width:110% ;
+        height:150% !important;
         justify-content: center;
     }
 }
