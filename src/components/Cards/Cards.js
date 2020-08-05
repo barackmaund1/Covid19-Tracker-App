@@ -2,7 +2,7 @@ import React from 'react';
 import './Cards.css';
 import { Card,CardContent,Typography,Grid} from '@material-ui/core';
 import CountUp from 'react-countup';
-
+import Image from '../../images/IMG2.jpg'
 
 const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
     
@@ -13,6 +13,12 @@ const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
         <div className='app__card'>
            <Grid container spacing={3} justify='center'>
  
+                <Grid item component={ Card } xs={12} md={3} className='app__prophecy card' >
+                    <CardContent>
+                      <img className='app__prophecy_image' src={Image}/>
+                      <Typography variant='body2'>The one who prophesied CORONAVIRUS on dec 2015</Typography>
+                      </CardContent>
+                </Grid>
                 <Grid item component={ Card } xs={12} md={3} className='app__infected card' >
                     <CardContent>
                       <Typography color='textSecondary'  gutterBottom>Infected</Typography>
