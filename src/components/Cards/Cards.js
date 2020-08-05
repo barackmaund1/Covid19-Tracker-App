@@ -49,6 +49,7 @@ const Cards = ({ data:{ confirmed,recovered,deaths,lastUpdate}}) => {
                     <Typography variant='h5'>
                     <CountUp
                         start={0}
+                        end={deaths.value}
                         duration={2.5}
                         separator=','
                     />

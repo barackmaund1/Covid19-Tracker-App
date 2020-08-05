@@ -48,7 +48,7 @@ const barchar=(
                     'rgb(0,255,0,0.5)',
                     'rgb(255,0,0,0.5)',
                 ],
-                data:[ confirmed.value,recovered.value ]
+                data:[ confirmed.value,recovered.value ,deaths.value]
             }]
           }}
           options={{
