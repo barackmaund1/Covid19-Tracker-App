@@ -15,7 +15,7 @@ useEffect(() =>{
 },[])
 
 const lineChart =(
-  dailyData.length?(<Line
+  dailyData?.length?(<Line
   data={{
       labels:dailyData.map(({ date }) => date),
       datasets:[{
