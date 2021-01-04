@@ -31,3 +31,8 @@
     margin:1% !important ;
   }
 }
+.container__app > h1{
+  color: brown;
+  justify-content: center;
+  text-align: center;
+}
